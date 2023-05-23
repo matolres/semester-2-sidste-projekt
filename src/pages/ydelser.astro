@@ -1,0 +1,52 @@
+---
+import Header from "../components/header.astro";
+import "../styling/main.css";
+import "../styling/ydelser.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="src/styling/main.css">
+        <link rel="stylesheet" href="src/styling/ydelser.css">
+		<title>Ydelser</title>
+	</head>
+    <body>
+        <header><Header /></header>
+        <main>
+            <section class="ydelser">
+                <div id="konsultation">
+                    <h3>Konsultation</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <h4>400kr. i timen + moms</h4>
+                </div>
+                <div id="projektstyring">
+                    <h3>Projektstyring</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <ul>
+                        <li><h4>fra 5.000kr.</h4></li>
+                        <li><h4>Amatør fra 7.500kr.</h4></li>
+                        <li><h4>Professionel fra 10.000kr.</h4></li>
+                    </ul>
+                </div>
+                <div id="paneler">
+                    <div id="panel_billede">
+                    <h3>Paneler</h3>
+                    <img src="" alt="" height="300" width="300">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
+                    <h4>Fra 1.500kr.</h4>
+                </div>
+            </section>
+
+        </main>
+        
+    </body>
+</html>

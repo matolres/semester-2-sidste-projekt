@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html, body {
+    background-color: #FFFEF0;
+}
+
+h1, h2, h3 {
+  font-family: 'Sora', sans-serif;
+  color: #D17B0F;
+}
+p, li, h4{
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px;
+}

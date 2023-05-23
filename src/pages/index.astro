@@ -1,4 +1,6 @@
 ---
+import Header from "../components/header.astro";
+import "../styling/main.css";
 ---
 
 <html lang="en">
@@ -7,9 +9,49 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="src/styling/main.css">
+		<link rel="stylesheet" href="src/styling/index.css">
+		<title>Forside</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header><Header /></header>
+		<main>
+		<div id="splash">
+			<img src="" alt="">
+			<div>
+				<h1>BÆREDYGTIG CUSTOM AKUSTIK</h1>
+				<img id="arrow" src="images/Arrow.svg" alt="">
+			</div>
+		</div>
+		<div class="fordele">
+			<div>
+				<h2>Fordele ved god akustik</h2>
+			</div>
+			<div id="fordele_liste">
+				<ul>
+					<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare arcu eget justo interdum.</p></li>
+					<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare arcu eget justo interdum.</p></li>
+					<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare arcu eget justo interdum.</p></li>
+					<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare arcu eget justo interdum.</p></li>
+					<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare arcu eget justo interdum.</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="abs_koeff">
+				<h2>Absorberingskoefficient</h2>
+				<div id="graf">
+					<img src="" alt="" height="300" width="300">
+				</div>
+			<div id="tekst">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare arcu eget justo interdum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare arcu eget justo interdum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare arcu eget justo interdum.</p>
+			</div>
+		</div>
+		</main>
+
+
 	</body>
 </html>

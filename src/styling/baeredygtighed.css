@@ -1,0 +1,24 @@
+main {
+  margin: 50px 30px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header ul li:nth-child(2) {
+  font-weight: 900;
+}
+
+.akustik_info {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#tekst h1 {
+  margin-bottom: 20px;
+}
+#akustik_video {
+  display: flex;
+  justify-content: center;
+}
