@@ -5,7 +5,7 @@ main {
     align-items: center;
   }
 
-  header ul li:nth-child(5) {
+  header ul li:nth-child(6) {
     font-weight: 900;
 }
 
@@ -17,15 +17,20 @@ main p {
 
 .booking_form {
     display: flex;
-    width: 100%;
+    width: 95%;
     justify-content: center;
-    max-width: 500px;
-    background-color: #E5F2DC;
+    background-color: #00852887;
     padding: 20px;
     border-radius: 8px;
+    max-width: 500px;
 }
 form {
     width: 100%;
+}
+label {
+    color: #E5F2DC;
+    opacity: 100%;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 input[type=text] {
@@ -47,8 +52,14 @@ input[type=text] {
     padding: 7px 15px;
     font-size: 16px;
     color: #E5F2DC;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 #message {
     padding-bottom: 60px;
-} 
+}
+@media (min-width: 1100px){
+    .booking_form {
+        max-width: 700px;
+    }
+}

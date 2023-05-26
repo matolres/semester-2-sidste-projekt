@@ -4,12 +4,14 @@
   
     <nav class="navbar">
       <ul class="navmenu">
+        <li class="menu_item"><a href="/">FORSIDE</a></li>
         <li class="menu_item"><a href="/ydelser/">YDELSER</a></li>
         <li class="menu_item"><a href="/baeredygtighed">BÆREDYGTIGHED</a></li>
         <li class="logo"><a href="/"><img src="/images/logo.svg" alt="" height="70" width="70"></a></li>
         <li class="menu_item"><a href="/about/">ABOUT</a></li>
         <li class="menu_item"><a href="/booking/">BOOKING</a></li>
       </ul>
+      <a class="logo_mobil" href="/"><img src="/images/logo.svg" alt="" height="70" width="70"></a>
       <div class="burger_menu">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -35,6 +37,11 @@ a {
   color: #008528;
 }
 
+.menu_item:nth-child(1) {
+  display: none;
+}
+
+/* menu knapper hover effekt */
 .menu_item::after {
   content: '';
   position: absolute;
@@ -45,7 +52,7 @@ a {
   left: 0;
   background-color: #008528;
   transform-origin: bottom left;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.1s ease-out;
 }
 
 .menu_item:hover::after {
@@ -79,13 +86,27 @@ a {
   transition: all 0.3s ease-in-out;
   background-color: #008528;
 }
+.logo_mobil {
+  display: none;
+}
 
 @media(max-width:750px){
   .burger_menu {
     display: block;
     position: absolute;
     right: 5%;
+    z-index: 100;
   }
+  .logo {
+    display: none;
+  }
+  .logo_mobil {
+  display: block;
+  position: absolute;
+  left: 3%;
+  top: 1%;
+  z-index: 10;
+}
 
   .burger_menu.open .bar:nth-child(2) {
     opacity: 0;
@@ -106,12 +127,20 @@ a {
   width: 100%;
   text-align: center;
   transition: 0.3s;
+  z-index: 50;
 }
 .menu_item {
   margin: 15px 0;
 }
 .navmenu.open {
   top: 0;
+}
+.menu_item:nth-child(1) {
+  display: block;
+  margin-top: 30px;
+}
+.menu_item:last-child {
+  margin-bottom: 30px;
 }
 }   
 </style>
