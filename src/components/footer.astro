@@ -1,7 +1,45 @@
 <footer>
     <div class="container">
-        <div>
-
+        <div class="email_tel">
+            <a href="">gallacoustics@gmail.com</a>
+            <p>+45 63572913</p>
         </div>
+        <img src="/images/SoMe ikoner.svg" alt="">
+        <p class="cvr">CVR: 11111111</p>
     </div>
 </footer>
+
+<style>
+    footer {
+        padding: 50px 0 50px 0;
+        background-color: #00852833;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .container p, .container a{
+        font-size: 14px;
+        text-decoration: none;
+        color: black;
+    }
+    .email_tel {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    img {
+       width: 150px;
+    }
+@media (min-width: 750px){
+    .email_tel {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+    }
+}
+</style>

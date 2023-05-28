@@ -71,6 +71,13 @@ main {
 #tekst {
   padding: 0 15px 0 15px;
 }
+#graf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
 @media (min-width: 750px) {
   #splash {
@@ -101,9 +108,6 @@ main {
     width: 80%;
     gap: 50px;
     margin-top: 50px;
-  }
-  .abs_koeff img {
-    margin-top: 20px;
   }
 
   #tekst {

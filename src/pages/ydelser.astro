@@ -1,5 +1,7 @@
 ---
 import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+import Booking from "../components/booking.astro";
 import "../styling/main.css";
 import "../styling/ydelser.css";
 ---
@@ -21,6 +23,7 @@ import "../styling/ydelser.css";
     <body>
         <header><Header /></header>
         <main>
+            <img class="ydelseswave" src="/images/ydelseswave.svg" alt="">
             <section class="ydelser">
                 <div id="konsultation">
                     <h3>Konsultation</h3>
@@ -45,8 +48,11 @@ import "../styling/ydelser.css";
                     <h4>Fra 1.500kr.</h4>
                 </div>
             </section>
+            <div class="booking_knap">
+                <button><Booking /></button>
+            </div>
 
         </main>
-        
+        <footer><Footer /></footer>    
     </body>
 </html>
