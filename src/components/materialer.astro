@@ -1,0 +1,20 @@
+---
+const { materialer } = Astro.props;
+const { name } = Astro.props;
+const { description } = Astro.props
+const { image } = Astro.props ;
+console.log(materialer);
+console.log(name);
+console.log(description);
+console.log(image);
+---
+
+<div class="materiale">
+    <h4 class="name">{name}</h4>
+    <div>
+        <img src= {image} alt="" height="200" width="200">
+        <div class="text">
+            <p>{description}</p>
+        </div>
+    </div>
+  </div> 
