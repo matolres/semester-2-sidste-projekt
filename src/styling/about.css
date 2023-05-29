@@ -3,7 +3,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
+.aboutwave {
+    position: absolute;
+    width: 140%;
+}
 
 header ul li:nth-child(5) {
     font-weight: 900;
