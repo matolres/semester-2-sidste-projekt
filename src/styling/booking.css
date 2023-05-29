@@ -60,6 +60,7 @@ input[type=text] {
     font-size: 16px;
     color: #E5F2DC;
     font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
 }
 
 #message {
