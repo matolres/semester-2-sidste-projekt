@@ -4,3 +4,4 @@ text.addEventListener("click", () => {
     text.classList.toggle("open");
 
 })
+
