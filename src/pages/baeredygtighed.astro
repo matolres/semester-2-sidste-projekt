@@ -47,17 +47,20 @@ console.log(materialer)
                 </div>
             </div>
             <div class="materialer">
-                <div class="title">
-                    <h2>Materialer</h2>
-                </div>
-                <div class="scrolling-wrapper">
-                    <div class="card" >
-                        {materialer.map((res)=> <Materialer materialer={res.id} description={res.description} name={res.name} image={res.image}/>)}
-                    </div>
+                <h2>Materialer</h2>
+                <div class="mat_content">
+                    <button><img id="arrow1" src="images/Arrow.svg" alt=""></button>
+                        <div class="scrolling_wrapper">
+                            <div class="card" >
+                                {materialer.map((res)=> <Materialer materialer={res.id} description={res.description} name={res.name} image={res.image}/>)}
+                            </div>
+                        </div>
+                    <button><img id="arrow2" src="images/Arrow.svg" alt=""></button>
                 </div>
                 
             </div>
         </main>
         <footer><Footer /></footer>    
     </body>
+    <script src="../scripts/materialer_scroll.js"></script>
 </html>
