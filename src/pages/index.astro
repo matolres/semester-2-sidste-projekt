@@ -2,71 +2,69 @@
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 import "../styling/main.css";
-import "../styling/index.css"
+import "../styling/index.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
-		<title>Forside</title>
-	</head>
-	<body>
-		<header><Header /></header>
-		<main>
-		<div id="splash">
-			<video autoplay loop><source src="public/forsidebølge3_1.mp4" type="video/mp4"></video>
-			<div id="overskrift">
-				<h1>BÆREDYGTIG CUSTOM <br> AKUSTIK</h1>
-				<a href="#fordele"><img id="arrow" src="images/Arrow.svg" alt=""></a>
-			</div>
-		</div>
-		<div id="fordele">
-			<div id="fordele_title">
-				<h1>Fordele ved god akustik</h1>
-			</div>
-			<div id="fordele_liste">
-				<ul>
-					<li><p>Højere taleforståelighed.</p></li>
-					<li><p>Bedre koncentration.</p></li>
-					<li><p>Hyggeligere roligere atmosfære.</p></li>
-					<li><p>Små rum føles mindre klaustrofobiske og larmende.</p></li>
-					<li><p>Store rum kan benyttes fleksibelt og samtaler kan afholdes forskellige steder i lokalet uden at forstyrre hinanden.</p></li>
-					<li><p>Musik og forstærket tale går klart igennem uden “rungen” og det er stadig muligt at føre en samtale andre steder i lokalet.</p></li>
-				</ul>
-				<p>Hos GallAcoustics bestræbes det at opnå en behagelig akustik hvor rumklangen er fordelt jævnt over alle frekvenser.</p>
-			</div>
-		</div>
-		<div class="abs_koeff">
-			<div id="graf">
-				<h3>Absorberingskoefficient</h3>
-				<img src="/images/graf.svg" alt="" >
-			</div>
-			<div id="tekst">
-				<p>Her ses et eksempel rumklangtid fordelt over frekvenser i et mellemstort lokale.<br>
-					<br>
-					Gul: Før akustisk regulering<br>
-					
-					Blå: Efter en typisk akustisk regulering<br>
-					
-					Grøn: Efter en optimal akustisk regulering<br>
-					<br>
-					Enkelt sagt: Jo fladere grafen er - jo bedre lyder det.<br>
-					<br>
-					Efter den typiske regulering, (blå) er der opnået højere taleforståelighed, pga. den lange rumklangstid i de dybe frekvenser vil film, musik og forstærket tale lyde mudret og rungende.<br>
-					<br>
-					Efter en optimal akustisk regulering (grøn) vil man opnå en endnu højere taleforståelighed uden at rummet føles “dødt” eller “lukket” i lyden. Film, forstærket tale og musik lyder klart og nærværende med en stram bas.
-					</p>
-			</div>
-		</div>
-		</main>
-	<footer><Footer /></footer>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet" />
+    <title>Forside</title>
+  </head>
+  <body>
+    <header><Header /></header>
+    <main>
+      <div id="splash">
+        <video autoplay loop><source src="public/forsidebølge3_1.mp4" type="video/mp4" /></video>
+        <div id="overskrift">
+          <h1>BÆREDYGTIG CUSTOM <br /> AKUSTIK</h1>
+          <a href="#fordele"><img id="arrow" src="images/Arrow.svg" alt="" /></a>
+        </div>
+      </div>
+      <div id="fordele">
+        <div id="fordele_title">
+          <h1>Fordele ved god akustik</h1>
+        </div>
+        <div id="fordele_liste">
+          <ul>
+            <li><p>Højere taleforståelighed.</p></li>
+            <li><p>Bedre koncentration.</p></li>
+            <li><p>Hyggeligere roligere atmosfære.</p></li>
+            <li><p>Små rum føles mindre klaustrofobiske og larmende.</p></li>
+            <li><p>Store rum kan benyttes fleksibelt og samtaler kan afholdes forskellige steder i lokalet uden at forstyrre hinanden.</p></li>
+            <li><p>Musik og forstærket tale går klart igennem uden “rungen” og det er stadig muligt at føre en samtale andre steder i lokalet.</p></li>
+          </ul>
+          <p>Hos GallAcoustics bestræbes det at opnå en behagelig akustik hvor rumklangen er fordelt jævnt over alle frekvenser.</p>
+        </div>
+      </div>
+      <div class="abs_koeff">
+        <div id="graf">
+          <h3>Absorberingskoefficient</h3>
+          <img src="/images/graf.svg" alt="" />
+        </div>
+        <div id="tekst">
+          <p>Her ses et eksempel rumklangtid fordelt over frekvenser i et mellemstort lokale.</p><br />
+          <ul>
+            <li>Gul: Før akustisk regulering</li><br />
+            <li>Blå: Efter en typisk akustisk regulering</li><br />
+            <li>Grøn: Efter en optimal akustisk regulering</li><br />
+          </ul>
+          <p>
+            Enkelt sagt: Jo fladere grafen er - jo bedre lyder det.<br />
+            Efter den typiske regulering, (blå) er der opnået højere taleforståelighed, pga. den lange rumklangstid i de dybe frekvenser vil film, musik og forstærket tale lyde mudret og rungende.<br />
+            <br />
+            Efter en optimal akustisk regulering (grøn) vil man opnå en endnu højere taleforståelighed uden at rummet føles “dødt” eller “lukket” i lyden. Film, forstærket tale og musik lyder klart og nærværende med en stram bas.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer><Footer /></footer>
+  </body>
 </html>
