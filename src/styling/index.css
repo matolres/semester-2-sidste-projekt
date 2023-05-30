@@ -1,9 +1,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+
 header ul li:nth-child(1) {
   font-weight: 900;
 }
+
+
+
 main {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -12,7 +18,9 @@ main {
     align-items: center;
 }
 
-/* bølge splash billede */
+
+
+/* Bølge splash billede */
 #splash {
     display: flex;
     background-color: #00852833;
@@ -26,13 +34,12 @@ main {
 #splash h1 {
     padding: 30px;
 }
-
+/* Pil animation */
 #arrow {
     animation: MoveUpDown 1.5s ease-in-out infinite;
     left: 0;
     bottom: 0;
-  }
-  
+}
   @keyframes MoveUpDown {
     0%, 100% {
       transform: translateY(0);
@@ -59,6 +66,8 @@ main {
   margin-bottom: 10px;
 }
 
+
+
 /* Abs.koefficient div */
 .abs_koeff {
         display: flex;
@@ -79,6 +88,8 @@ main {
   gap: 10px;
 }
 
+
+
 @media (min-width: 750px) {
   #splash {
     height: 700px;
@@ -87,6 +98,8 @@ main {
     height: 100px;
     width: 100px;
   }
+
+
 
   .fordele {
     flex-direction: row;
@@ -103,19 +116,23 @@ main {
     margin-bottom: 15px;
   }
 
+
+
   .abs_koeff {
     flex-direction: row;
     width: 80%;
     gap: 50px;
     margin-top: 50px;
   }
-
   #tekst {
     align-self: flex-start;
     order: -1;
     padding-top: 55px;
   }
 }
+
+
+
 @media (min-width: 1100px){
   #fordele {
     flex-direction: row;
@@ -129,6 +146,9 @@ main {
   #fordele_title {
     display: flex;
   }
+
+
+
   .abs_koeff {
     width: 70%;
   }

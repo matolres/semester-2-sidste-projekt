@@ -1,3 +1,9 @@
+header ul li:nth-child(3) {
+  font-weight: 900;
+}
+
+
+
 main {
   margin: 40px 0 ;
   display: flex;
@@ -7,6 +13,8 @@ main {
   z-index: 10;
 }
 
+
+
 .bæredygtigwave {
   position: absolute;
   width: 140%;
@@ -14,9 +22,8 @@ main {
   z-index: 1;
   transform: scaleX(-1);
 }
-header ul li:nth-child(3) {
-  font-weight: 900;
-}
+
+
 
 .akustik_info {
   display: flex;
@@ -39,6 +46,8 @@ header ul li:nth-child(3) {
   width: 100%;
 }
 
+
+
 .materialer {
   display: flex;
   flex-direction: column;
@@ -46,7 +55,6 @@ header ul li:nth-child(3) {
   align-items: center;
   margin: 40px 0;
 }
-
 .materialer h2 {
   margin: 15px 0;
 }
@@ -60,11 +68,30 @@ button {
 }
 
 
+
 @media (min-width: 750px) {
   .akustik_info {
-    
     width: 65%;
   }
+
+ 
+  
+/* Materialer container scroll */
+  .mat_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .scrolling_wrapper{
+    overflow-x: hidden;
+    margin: 10px 10px;
+    width: 53%;
+    scroll-behavior: smooth
+  }
+  .card {
+    flex-direction: row;
+  }
+  /* Materialer container venstre/højre pil hover effekt */
   button {
     display: block;
     border: none;
@@ -79,31 +106,15 @@ button {
     transform: rotate(-90deg);
     transition: 0.2s ease-in-out;
   }
-
   #arrow1:hover {
     transform: scale(1.3) rotate(90deg);
   }
   #arrow2:hover {
     transform: scale(1.3) rotate(-90deg);
-
-  }
-
-  .mat_content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-  .card {
-    flex-direction: row;
-  }
-  .scrolling_wrapper{
-    overflow-x: hidden;
-    margin: 10px 10px;
-    width: 53%;
-    scroll-behavior: smooth
   }
 }
+
+
 
 @media (min-width: 1100px){
   .akustik_info {
@@ -114,6 +125,9 @@ button {
     flex-direction: row;
     flex: 1 1 0px;
   }
+
+
+
   .scrolling_wrapper{
     width: 55%;
   }

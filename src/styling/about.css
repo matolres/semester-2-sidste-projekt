@@ -1,3 +1,9 @@
+header ul li:nth-child(5) {
+    font-weight: 900;
+}
+
+
+
 main {
     margin: 40px 0;
     display: flex;
@@ -6,15 +12,17 @@ main {
     position: relative;
     z-index: 20;
   }
+
+
+
 .aboutwave {
     position: absolute;
     width: 140%;
     z-index: 1;
 }
 
-header ul li:nth-child(5) {
-    font-weight: 900;
-}
+
+
 .about {
     width: 80%;
     z-index: 20;
@@ -33,6 +41,9 @@ header ul li:nth-child(5) {
     display: flex;
     justify-content: center;
 }
+
+
+
 @media (min-width:750px){
     .about {
         width: 75%;
@@ -45,6 +56,9 @@ header ul li:nth-child(5) {
     }
 
 }
+
+
+
 @media (min-width:1100px) {
     .about {
         width: 70%;

@@ -1,3 +1,9 @@
+header ul li:nth-child(6) {
+    font-weight: 900;
+}
+
+
+
 main {
     margin: 50px 30px 50px 30px;
     display: flex;
@@ -6,20 +12,21 @@ main {
     position: relative;
     z-index: 20;
   }
+main h1,
+main p {
+      max-width: 400px;
+      margin-bottom: 30px;
+}
+
+
+
 .bookingwave {
     position: absolute;
     width: 150%;
     z-index: 1;
 }
-  header ul li:nth-child(6) {
-    font-weight: 900;
-}
 
-main h1,
-main p {
-    max-width: 400px;
-    margin-bottom: 30px;
-}
+
 
 .booking_form {
     display: flex;
@@ -39,15 +46,14 @@ label {
     opacity: 100%;
     font-family: 'Space Grotesk', sans-serif;
 }
-
 input[type=text] {
     width: 100%;
     margin: 8px 0;
     box-sizing: border-box;
     border-style: none;
     padding-bottom: 10px;
-  }
-  .submit_container {
+}
+.submit_container {
     display: flex;
     justify-content: center;
   }
@@ -62,15 +68,20 @@ input[type=text] {
     font-family: 'Space Grotesk', sans-serif;
     cursor: pointer;
 }
-
 #message {
     padding-bottom: 60px;
 }
+
+
+
 @media (min-width: 1100px){
-    .booking_form {
-        max-width: 700px;
-    }
     .bookingwave{
         width: 110%;
+    }
+
+
+    
+    .booking_form {
+        max-width: 700px;
     }
 }
