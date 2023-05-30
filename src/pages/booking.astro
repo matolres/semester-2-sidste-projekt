@@ -6,41 +6,45 @@ import "../styling/booking.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet" />
 
-		<title>About</title>
-	</head>
-    <body>
-        <header><Header /></header>
-		<main>
-			<img class="bookingwave" src="/images/bookingwave.svg" alt="">
-			<h1>Booking</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<div class="booking_form">
-				<form>
-					<label for="fname">First name</label><br>
-					<input type="text" id="fname" name="fname"><br>
-					<label for="lname">Last name</label><br>
-					<input type="text" id="lname" name="lname"><br>
-					<label for="subject">Subject</label><br>
-					<input type="text" id="subject" name="subject"><br>
-					<label for="text">Message</label><br>
-					<input type="text" id="message" name="message"><br>
-					<div class="submit_container">
-						<input type="submit" value="Submit" id="submit">
-					</div>
-				</form>
-			</div>
-		</main>
-		<footer><Footer /></footer>
-    </body>
+    <title>About</title>
+  </head>
+  <body>
+    <header><Header /></header>
+    <main>
+      <img class="bookingwave" src="/images/bookingwave.svg" alt="" />
+      <h1>Booking</h1>
+      <p>Skriv dine ønsker og kontaktinformation i formularen herunder, så vender jeg tilbage til dig hurtigst muligt, så vi kan lave en aftale sammen. Hvis du foretrækker at kontakte mig på anden vis, så kig nederst på hjemmesiden. Der finder du mit telefonnummer og links til mine sociale medier.</p>
+      <div class="booking_form">
+        <form>
+          <label for="fname">Fornavn</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+          <label for="lname">Efternavn</label><br />
+          <input type="text" id="lname" name="lname" /><br />
+          <label for="email">Email</label><br />
+          <input type="text" id="email" name="email" /><br />
+          <label for="phone">Telefonnummer</label><br />
+          <input type="text" id="phone" name="phone" /><br />
+          <label for="subject">Subject</label><br />
+          <input type="text" id="subject" name="subject" /><br />
+          <label for="text">Message</label><br />
+          <input type="text" id="message" name="message" /><br />
+          <div class="submit_container">
+            <input type="submit" value="Submit" id="submit" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer><Footer /></footer>
+  </body>
 </html>
