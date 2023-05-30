@@ -85,7 +85,7 @@ button {
   .scrolling_wrapper{
     overflow-x: hidden;
     margin: 10px 10px;
-    width: 53%;
+    width: 36.5%;
     scroll-behavior: smooth
   }
   .card {

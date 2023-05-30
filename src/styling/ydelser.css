@@ -22,7 +22,7 @@ main {
 
 .ydelser {
   display: grid;
-  grid-template-rows: 0.75fr 0.75fr 0.75fr;
+  grid-template-rows: 0.5fr 0.75fr 0.75fr;
   gap: 20px;
   width: 75%;
   margin: 40px 0;
@@ -55,9 +55,15 @@ main {
   gap: 15px;
 }
 #panel_billede {
-  display: grid;
+  display: flex;
   justify-content: center;
   gap: 15px;
+  width: 100%;
+  background-image: url("../images/materiale 3.jpg");
+  height: 200px;
+  background-size: cover;
+  max-width: 300px;
+  align-self: center;
 }
 #panel_billede h3 {
   text-align: start;
@@ -81,7 +87,7 @@ main {
   }
 
 
-  
+
   .booking_knap {
     grid-column: 1 / span 3;
     justify-self: center;
@@ -98,5 +104,9 @@ main {
   }
   .ydelser img {
     width: 100%;
+  }
+
+  #panel_billede {
+    align-self: flex-start;
   }
 }
