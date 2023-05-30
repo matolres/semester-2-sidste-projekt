@@ -23,16 +23,23 @@ main {
 /* Bølge splash billede */
 #splash {
     display: flex;
-    background-color: #00852833;
     flex-direction: column;
     align-items: center;
-    height: 400px;
     text-align: center;
     justify-content: center;
     width: 100%;
+    position: relative;
+}
+video {
+  width: 100%;
 }
 #splash h1 {
     padding: 30px;
+}
+#overskrift {
+  z-index: 100;
+  position: absolute;
+  
 }
 /* Pil animation */
 #arrow {
@@ -94,9 +101,6 @@ main {
 
 
 @media (min-width: 750px) {
-  #splash {
-    height: 700px;
-  }
   #arrow {
     height: 100px;
     width: 100px;
