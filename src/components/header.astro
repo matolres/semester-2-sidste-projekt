@@ -7,11 +7,11 @@
         <li class="menu_item"><a href="/">FORSIDE</a></li>
         <li class="menu_item"><a href="/ydelser/">YDELSER</a></li>
         <li class="menu_item"><a href="/baeredygtighed">BÆREDYGTIGHED</a></li>
-        <li class="logo"><a href="/"><img src="/images/logo.svg" alt="" height="70" width="70"></a></li>
         <li class="menu_item"><a href="/about/">ABOUT</a></li>
         <li class="menu_item"><a href="/booking/">BOOKING</a></li>
       </ul>
-      <a class="logo_mobil" href="/"><img src="/images/logo.svg" alt="" height="70" width="70"></a>
+      <a class="logo" href="/"><img src="/images/logo.svg" alt="" height="70" width="70"></a>
+      <a class="logo_mobil" href="/"><img src="/images/logo.svg" alt="" height="65" width="65"></a>
       <div class="burger_menu">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -32,14 +32,15 @@
 
 .navmenu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   gap: 90px;
   width: 100%;
+  margin: 0 20px;
 }
 
 .logo {
-
+  position: absolute;
 }
 
 .menu_item {
@@ -60,7 +61,12 @@ a {
 .menu_item:nth-child(1) {
   display: none;
 }
-
+.menu_item:nth-child(3) {
+  margin-right: 25%;
+}
+.menu_item:nth-child(4) {
+  margin-right: 5%;
+}
 /* Menu knapper hover effekt */
 .menu_item::after {
   content: '';
@@ -154,8 +160,20 @@ a {
   display: block;
   margin-top: 30px;
 }
+
+.menu_item:nth-child(3) {
+  margin-right: 0;
+}
+.menu_item:nth-child(4) {
+  margin-right: 0;
+}
 .menu_item:last-child {
   margin-bottom: 30px;
 }
-}   
+}
+@media (max-width:1100px) {
+  .navmenu {
+  justify-content: center;
+  }
+}  
 </style>
