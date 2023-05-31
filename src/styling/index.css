@@ -85,7 +85,7 @@ video {
         align-items: center;
 }
 #tekst {
-  padding: 0 15px 0 15px;
+  padding: 0 15px 30px 15px;
 }
 #graf {
   display: flex;
