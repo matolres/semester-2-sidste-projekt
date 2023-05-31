@@ -99,10 +99,13 @@ button {
     cursor: pointer;
   }
   #arrow1 {
+    height: 30px;
     transform: rotate(90deg);
     transition: 0.2s ease-in-out;
+
   }
   #arrow2 {
+    height: 30px;
     transform: rotate(-90deg);
     transition: 0.2s ease-in-out;
   }
