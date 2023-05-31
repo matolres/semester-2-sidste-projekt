@@ -92,7 +92,7 @@ button {
     flex-direction: row;
   }
   /* Materialer container venstre/højre pil hover effekt */
-  #arrow1 {
+  #arrow {
     transform: rotate(90deg);
     transition: 0.2s ease-in-out;
     cursor: pointer;
@@ -104,7 +104,7 @@ button {
     cursor: pointer;
     z-index: 1000;
   }
-  #arrow1:hover {
+  #arrow:hover {
     transform: scale(1.3) rotate(90deg);
   }
   #arrow2:hover {
