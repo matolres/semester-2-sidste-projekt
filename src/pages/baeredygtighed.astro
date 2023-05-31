@@ -43,13 +43,13 @@ console.log(materialer);
       <div class="materialer">
         <h2>Materialer</h2>
         <div class="mat_content">
-          <button><img id="arrow1" src="images/Arrow.svg" alt="" height="30" /></button>
+          <button><img id="arrow1" src="images/arrow.svg" alt="" height="30" /></button>
           <div class="scrolling_wrapper">
             <div class="card">
               {materialer.map((res) => <Materialer materialer={res.id} description={res.description} name={res.name} image={res.image} />)}
             </div>
           </div>
-          <button><img id="arrow2" src="images/Arrow.svg" alt="" height="30"/></button>
+          <button><img id="arrow2" src="images/arrow.svg" alt="" height="30"/></button>
         </div>
       </div>
     </main>
