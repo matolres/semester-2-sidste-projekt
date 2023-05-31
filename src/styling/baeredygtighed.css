@@ -64,6 +64,9 @@ main {
   align-self: flex-start;
 }
 
+#arrow1, #arrow2 {
+  display: none;
+}
 
 
 
@@ -91,12 +94,14 @@ main {
   }
   /* Materialer container venstre/højre pil hover effekt */
   #arrow1 {
+    display: block;
     transform: rotate(90deg);
     transition: 0.2s ease-in-out;
     cursor: pointer;
 
   }
   #arrow2 {
+    display: block;
     transform: rotate(-90deg);
     transition: 0.2s ease-in-out;
     cursor: pointer;
