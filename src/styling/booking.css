@@ -67,7 +67,14 @@ input[type=text] {
     color: #E5F2DC;
     font-family: 'Space Grotesk', sans-serif;
     cursor: pointer;
-}
+    transition: 0.2s ease-in-out;
+    }
+
+#submit:hover {
+        background-color: #D17B0F;
+    }
+
+
 #message {
     padding-bottom: 60px;
 }
