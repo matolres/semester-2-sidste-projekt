@@ -3,63 +3,57 @@ import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 import Materialer from "../components/materialer.astro";
 import "../styling/main.css";
-import "../styling/baeredygtighed.css"
+import "../styling/baeredygtighed.css";
 
-const materialer = await fetch(
-  "https://zaeoyllzxwqvhqlupxvb.supabase.co/rest/v1/materialer",
-  {
-    method: "GET",
-    headers: {
-      apikey:
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InphZW95bGx6eHdxdmhxbHVweHZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODUzNjE4NzcsImV4cCI6MjAwMDkzNzg3N30.RhJ__bfU2Q-2s0JbocxmOF2ZykaEY0Vych0sN-Pganc",
-    },
-
-  }
-).then((res) => res.json());
-console.log(materialer)
+const materialer = await fetch("https://zaeoyllzxwqvhqlupxvb.supabase.co/rest/v1/materialer", {
+  method: "GET",
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InphZW95bGx6eHdxdmhxbHVweHZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODUzNjE4NzcsImV4cCI6MjAwMDkzNzg3N30.RhJ__bfU2Q-2s0JbocxmOF2ZykaEY0Vych0sN-Pganc",
+  },
+}).then((res) => res.json());
+console.log(materialer);
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
-		<title>baeredygtighed</title>
-	</head>
-    <body>
-        <header><Header /></header>
-        <main>
-            <img class="bæredygtigwave" src="/images/bæredygtighedwave.svg" alt="">
-            <div class="akustik_info">
-                    <h1>God akustik med <br> god samvittighed</h1>
-                <div id="akustik_video">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    <div id="video">
-                        <iframe width="560" height="315" src="https://youtu.be/kcljhtmq3UQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                </div>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet" />
+    <title>baeredygtighed</title>
+  </head>
+  <body>
+    <header><Header /></header>
+    <main>
+      <img class="bæredygtigwave" src="/images/bæredygtighedwave.svg" alt="" />
+      <div class="akustik_info">
+        <h1>God akustik med god samvittighed</h1>
+        <div id="akustik_video">
+          <p>Med nutidens viden indenfor genbrug af materialer og Co2 neutral produktion af ting som bl.a. træ, har det aldrig været nemmere at lave kreative løsninger indenfor akustik, der ikke går på kompromis med det endelige resultat og på samme tid er bæredygtigt. Når disse materialer bliver kombineret, kan jeg lave alt fra monterbare paneler til skræddersyede løsninger der forbedrer enhver form for lokales akustik. <br /> Vil du høre mere om processen bag og de yderligere fordele ved bæredygtig akustik, så se videoen og kig på nogen af de materialer, jeg ofte benytter mig af.</p>
+          <div id="video">
+            <iframe width="560" height="315" src="https://youtu.be/kcljhtmq3UQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="materialer">
+        <h2>Materialer</h2>
+        <div class="mat_content">
+          <button><img id="arrow1" src="images/Arrow.svg" alt="" /></button>
+          <div class="scrolling_wrapper">
+            <div class="card">
+              {materialer.map((res) => <Materialer materialer={res.id} description={res.description} name={res.name} image={res.image} />)}
             </div>
-            <div class="materialer">
-                <h2>Materialer</h2>
-                <div class="mat_content">
-                    <button><img id="arrow1" src="images/Arrow.svg" alt=""></button>
-                        <div class="scrolling_wrapper">
-                            <div class="card" >
-                                {materialer.map((res)=> <Materialer materialer={res.id} description={res.description} name={res.name} image={res.image}/>)}
-                            </div>
-                        </div>
-                    <button><img id="arrow2" src="images/Arrow.svg" alt=""></button>
-                </div>
-                
-            </div>
-        </main>
-        <footer><Footer /></footer>    
-    </body>
-    <script src="../scripts/materialer_scroll.js"></script>
+          </div>
+          <button><img id="arrow2" src="images/Arrow.svg" alt="" /></button>
+        </div>
+      </div>
+    </main>
+    <footer><Footer /></footer>
+  </body>
+  <script src="../scripts/materialer_scroll.js"></script>
 </html>
