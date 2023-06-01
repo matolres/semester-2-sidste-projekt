@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-html {
+html, body {
     background-color: #FFFEF0;
     overflow-x: hidden;
 }
@@ -11,6 +11,10 @@ html {
 h1, h2, h3 {
   font-family: 'Sora', sans-serif;
   color: #D17B0F;
+  font-weight: 100;
+}
+h1 {
+  font-size: 32px;
 }
 h4 {
   font-family: 'Sora', sans-serif;

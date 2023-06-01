@@ -5,9 +5,9 @@ const arrow2 = document.querySelector('#arrow2');
 document.addEventListener("DOMContentLoaded", documentReady)
 function documentReady() {
 arrow1.onclick = function () {
-  document.querySelector('.scrolling_wrapper').scrollLeft -= 270;
+  document.querySelector('.scrolling_wrapper').scrollLeft -= 285;
 };
 arrow2.onclick = function () {
-  document.querySelector('.scrolling_wrapper').scrollLeft += 270;
+  document.querySelector('.scrolling_wrapper').scrollLeft += 285;
 };
 }
